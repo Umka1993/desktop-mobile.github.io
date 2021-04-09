@@ -664,6 +664,10 @@ button {
   .header__head--search input {
     width: 60px;
   }
+  .header__head--search input:focus {
+    width: 200px;
+    background: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -706,6 +710,10 @@ button {
   }
   .header__head--search input {
     width: 50px;
+  }
+  .header__head--search input:focus {
+    width: 200px;
+    background: none;
   }
   .header__head--navigation {
     text-align: center;
