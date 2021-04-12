@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Raleway:wght@600&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -451,7 +452,6 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 14px;
-  font-family: 'roboto';
   line-height: 1.429;
 }
 
@@ -466,14 +466,19 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-decoration: none;
-  color: #4e4a4a;
+  color: white;
   font-weight: 400;
+  font-family: 'Raleway', sans-serif;
 }
 
 .header__title--email img, .header__title--phone img, .header__title--office img, .header__title--favorites img {
   width: 20px;
   height: 20px;
   margin-right: 10px;
+}
+
+.header__title--email span, .header__title--phone span, .header__title--office span, .header__title--favorites span {
+  font-family: 'Raleway', sans-serif;
 }
 
 .header__wrapp {
@@ -502,19 +507,24 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header__head--logo img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
 }
 
 .header__head--logo span {
+  font-family: 'Open Sans', sans-serif;
   color: black;
   font-size: 15px;
+  width: 90px;
 }
 
 .header__head--nav {
@@ -537,9 +547,13 @@ button {
 }
 
 .header__head--child > li > a {
-  font-family: 'roboto';
+  font-family: 'Raleway', sans-serif;
   font-size: 14px;
   color: #4e4a4a;
+}
+
+.header__head--child > li > a:hover {
+  font-size: 15px;
 }
 
 .header__head--search input {
@@ -569,15 +583,31 @@ button {
   font-weight: 400;
 }
 
-.header__head--shopping-cart a img {
-  width: 20px;
-  height: 20px;
-  margin-left: 10px;
+.header__head--shopping-cart a span {
+  font-size: 15px;
+  color: #2ca5d4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.header__head--shopping-cart a span {
+.header__head--shopping-cart a span .black {
+  font-weight: bold;
   color: black;
-  font-size: 15px;
+}
+
+.shopping-cart--img {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #2ca4d4c0;
+  background-image: url("../img/shopping-cart.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: 36% center;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
